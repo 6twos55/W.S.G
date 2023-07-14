@@ -1,6 +1,8 @@
 # W.S.G
 ## Prayer and worship website.
 
+### Optimized only for desktop views
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## N/B: You can't go to the sections in the main page from the request prayer form page. 
