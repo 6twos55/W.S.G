@@ -1,0 +1,289 @@
+@import './config';
+// import poppins
+
+.mainContainer {
+
+  .aboutContainer {
+    padding: 150px 200px;
+  
+    .aboutCover {
+      padding-inline: 50px;
+  
+      .title {
+        @extend %title-styles;
+      }
+      
+      // subtitle section
+      .subTitleCover {
+        @include subTitleStyles();
+      }
+  
+      // main content section
+      .mainContent {
+        display: flex;
+        gap: 60px;
+        width: fit-content;
+  
+        // mission and vision column
+        .missionVisionCover {
+          width: 470px;
+          height: fit-content;
+  
+          > img {
+            width: 470px;
+            height: 660px;
+            margin-bottom: 20px;
+          }
+  
+          .contentCover {
+            
+            .missionTitle {
+              margin: 0;
+            
+              :nth-child(1) {
+                @extend %inline;
+                padding-right: 0.2vw;
+                color: #DF2601;
+                font-size: 47px;
+                font-weight: 700;
+              }
+  
+              .missionName {
+                @extend %number-values;
+              }
+            }
+  
+            .subText {
+              color: #000;
+              font-family: 'Poppins';
+              font-size: 17px;
+              font-weight: 400;
+              letter-spacing: 0.5px;
+              margin: 20px 0 41px 0;
+            }
+  
+            .visionList {
+              display: flex;
+              flex-direction: column;
+              gap: 1vh;
+  
+              li {
+                display: flex;
+                align-items: center;
+                padding: 9px 16px;
+                background: #F8F1EF;
+                gap: 0.5vw;
+  
+                img {
+                  background: #C52100;
+                  width: 10px;
+                  height: 10px;
+                  padding: 12px;
+                  justify-content: center;
+                  align-items: center;
+                  border-radius: 50%;
+                }
+  
+                p {
+                  margin: 0;
+                }
+              }
+            }
+          }
+  
+        }
+  
+        // community colunm
+        .communityCover {
+          width: 470px;
+          
+          .communityTitle {
+            margin: 0;
+            margin-bottom: 2.5vh;
+  
+            :nth-child(1) {
+              @extend %inline;
+              padding-right: 0.2vw;
+              color: #DF2601;
+              font-size: 47px;
+              font-weight: 700;
+            }
+  
+            :nth-child(2) {
+              @extend %number-values;
+            }
+          }
+  
+          .subText {
+            margin: 0;
+            color: #632727;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 22px;
+          }
+  
+          .loremCover {
+            display: flex;
+            flex-direction: column;
+            gap: 3vh;
+            padding: 7vh 0 9vh 0;
+  
+            .loremItem {
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              padding: 15px;
+              gap: 8px;
+              background: #F8F1EF;
+              width: 11.5vw;
+  
+              img {
+                background: #C52100;
+                width: 20px;
+                height: 20px;
+                padding: 10px;
+              }
+  
+              div {
+                display: flex;
+                flex-direction: column;
+  
+                p {
+                  margin: 0;
+                  color: #2B0A0A;
+                  font-size: 17px;
+                  font-weight: 700;
+                }
+  
+                small {
+                  color: #632727;
+                  font-size: 13px;
+                  font-weight: 400;
+                }
+              }
+  
+            }
+          }
+  
+          .bible {
+            width: 470px;
+            height: 320px;
+            margin-bottom: 5vh;
+          }
+  
+          .sunlitPrayer {
+            width: 470px;
+            height: 360px;
+          }
+  
+        }
+      }
+  
+    }
+  
+  }
+
+  @import './inner/viewMore.scss';
+
+
+  .contContainer {
+    padding: 150px 200px;
+
+    .contCover {
+      padding-inline: 50px;
+      display: flex;
+      gap: 60px;
+      width: fit-content;
+      align-items: center;
+
+      img {
+        width: 470px;
+        height: 660px;
+      }
+
+      .contContentCover {
+        width: 470px;
+        
+        h2 {
+          margin: 0;
+            
+          :nth-child(1) {
+            @extend %inline;
+            padding-right: 0.2vw;
+            color: #DF2601;
+            font-size: 47px;
+            font-weight: 700;
+          }
+
+          :nth-child(2), :nth-child(3) {
+            @extend %number-values;
+          }
+          :nth-child(3){
+            display: block;
+          }
+        }
+
+        p {
+          margin: 2.5vh 0 3vh 0;
+          color: #632727;
+          font-size: 17px;
+          font-weight: 400;
+          line-height: 22px;
+          letter-spacing: 1px;
+        }
+
+        small {
+          color: #632727;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 20px;
+          display: block;
+          margin-bottom: 5vh;
+          margin-bottom: 12vh;
+        }
+
+        a {
+          padding: 14px 20px;
+          text-decoration: none;
+          text-align: center;
+          font-size: 13px;
+          font-weight: 700;
+          height: fit-content;
+          border: 1px solid #400;
+          background: #F8F1EF;
+          color: #400;
+        }
+      }
+    }
+  }
+
+  @import './inner/upcomingEvents.scss';
+
+}
+
+@media screen and (max-width: 1300px) {
+  .mainContainer {
+    .aboutContainer {
+      padding: 100px 100px;
+    }
+  
+    .contContainer {
+      padding: 100px 100px;
+    }
+  }
+  
+}
+
+@media screen and (max-width: 1220px) {
+  .mainContainer {
+    .aboutContainer {
+      padding: 0;
+    }
+  
+    .contContainer {
+      padding: 0;
+    }
+  }
+  
+}
+

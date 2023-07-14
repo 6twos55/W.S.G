@@ -1,0 +1,57 @@
+@import './config';
+
+.navContainer {
+  padding: 2vh 0;
+  background: #fff;
+  @extend %nav-Styles;
+
+  .navContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+
+    .appName {
+      padding-inline: 4vw;
+      font-size: 25px;
+      font-weight: 600;
+      margin: 0;
+
+      a {
+        text-decoration: none;
+        color: #2B0A0A;
+      }
+    }
+
+    .navLinks{
+      display: flex;
+      justify-content: space-between;
+      padding-inline-start: 11vw;
+      
+      .plainLinks {
+        padding-top: 2vh;
+        padding-inline-end: 7vw;
+        font-weight: 600;
+        
+        a {
+          padding-inline: 1vw;
+          text-decoration: none;
+          color: #2B0A0A;
+          font-size: 14px;
+        }
+      }
+
+      .styledLink {
+        display: inline-flex;
+        padding: 15px;
+        text-decoration: none;
+        border: 1px solid #400;
+        background: #F8F1EF;
+        font-size: 16px;
+        font-weight: 500;
+        margin-right: 6vw;
+        color: #400;
+      }
+    }
+  }
+}

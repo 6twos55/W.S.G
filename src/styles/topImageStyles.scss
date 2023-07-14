@@ -1,0 +1,64 @@
+@import './config';
+
+.topImageContainer {
+  background: url(../static/images/gracious-adebayo.png), 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: lightgray;
+  height: 613px;
+
+  .imageTextCover {
+    width: 740px;
+    padding: 20vh 0 0 22vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+
+    h1 {
+      font-size: 50px;
+      margin: 0;
+      color: #fff;
+      font-weight: 600;
+    }
+
+    p {
+      width: 618px;
+      color: #fff;
+      font-size: 15px;
+      font-weight: 600;
+      line-height: 34px;
+      margin: 3vh 0 4vh 0;
+    }
+
+    .buttonsCover {
+      display: inline-flex;
+      align-items: flex-start;
+      gap: 46px;
+
+      :nth-child(1) {
+        border: 1px solid #400;
+        background: #F8F1EF;
+        color: #400;
+        @extend %top-img-buttons;
+      }
+
+      :nth-child(2) {
+        border: 1px solid #F8F1EF;
+        color: #fff;
+        @extend %top-img-buttons;
+      }
+    }
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 697.5px;
+    background-color: #00000067;
+  }
+}
