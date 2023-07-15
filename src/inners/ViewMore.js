@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react';
+import { useRef } from 'react';
 import { Link } from "react-router-dom";
 import arrowLeft from "../static/icons/arrowLeft.svg";
 import arrowRight from "../static/icons/arrowRight.svg";
@@ -9,11 +9,11 @@ import girlsSitting from "../static/images/girls-sitting.png";
 
 const ViewMore = () => {
   const scrollRef = useRef(null);
-  const [scrollPosition, setScrollPosition] = useState(0);
+  // let scrollPosition = "";
 
   const handleScroll = () => {
-    const newPosition = scrollRef.current.scrollLeft;
-    setScrollPosition(newPosition);
+    // const newPosition = scrollRef.current.scrollLeft;
+    // scrollPosition = newPosition;
   };
 
   const scrollToStart = () => {
