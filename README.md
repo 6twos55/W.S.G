@@ -1,7 +1,7 @@
 # W.S.G
 ## Prayer and worship website.
 
-### Optimized only for desktop views
+## Optimized only for desktop views
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
